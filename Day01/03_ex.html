@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>list image element</title>
+    </head>
+<body>
+    
+    <!-- 1. List 요소 -->
+    <ul>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+    </ul>
+    <ol>
+        <li>aaa</li>
+        <li>bbb</li>
+        <li>ccc</li>
+    </ol>
+
+    <dl>
+        <dt>aaa</dt>
+        <dd>이것은 Definition Data입니다.</dd>
+        <dt>aaa</dt>
+        <dd>이것은 Definition Data입니다.</dd>
+        <dt>aaa</dt>
+        <dd>이것은 Definition Data입니다.</dd>
+    </dl>
+
+    <!-- 2. 하이퍼링크 요소 : anchor (인라인 요소) -->
+    <!-- 2.1) 절대경로 -->
+    <a href="https://www.naver.com">네이버</a>
+    <a href="https://www.google.com"target="_blank">구글</a>
+    <br>
+    <!-- 2.2) 상대경로 -->
+    <a href="./02_text.html">02 text 웹문서</a>
+    <a href="../../Python/Projects/web-test/index.html"target=_blank>파이썬 수업에서 만든 웹문서</a>
+    <br>
+    <!-- 2.3) 같은 문서안에서 특정 위치로 스크롤 이동 -->
+    <a href="#aa">도움말 위치로..</a>
+
+    <hr>
+    <h3 id="aa">도움말</h3>
+
+    <!-- 인라인 요소의 줄바꿈을 위해 br태그 대신 p요소 사용도 좋음 -->
+    <p><a href="">aaa</a></p>
+    <p><a href="">bbb</a></p>
+
+    <!-- 리스트 요소안에 앵커요소 배치 가능 -->
+    <ul>
+        <li><a href="https://www.naver.com">네이버</a></li>
+        <li><a href="https://www.google.com">구글</a></li>
+        <li><a href="https://www.daum.net">다음</a></li>
+    </ul>
+
+    <!-- 이미지 파일링크를 열기 -->
+    <p>
+        <a href="https://media.istockphoto.com/id/1428401936/ko/%EC%82%AC%EC%A7%84/%EC%8A%A4%EB%85%B8%EC%9A%B0-%EB%93%9C%EB%A6%AC%ED%94%84%ED%8A%B8-%EA%B0%95%EC%84%A4%EB%9F%89-%EB%B0%8F-%ED%9D%90%EB%A6%BF%ED%95%9C-%EB%B0%B0%EA%B2%BD%EC%9D%B4%EC%9E%88%EB%8A%94-%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4-%ED%85%8C%EB%A7%88%EC%9D%98-%EC%95%84%EB%A6%84%EB%8B%A4%EC%9A%B4-%EB%B0%B0%EA%B2%BD.jpg?s=612x612&w=is&k=20&c=Vv94FFIlGf0A4gGlNzmbSByKBegYdxctNeIppWiDqVo=">이미지 링크</a>
+        <a href=".selak.jpg">이미지링크(상대경로)</a>
+    </p>
+
+    <!-- 웹프라우저에서 보여줄 수 없는 파일 형식 링크 (자동 다운로드) -->
+    <p>
+        <a href="../../새 폴더.zip">압축파일 링크</a>
+        <a href="../../aa.hwp">hwp 파일</a>
+    </p>
+
+    <!-- 이메일링크 -->
+    <p>
+        <a href="mailto:lucky.sohee.jang@gmail.com">이메일보내기</a>
+    </p>
+
+    <!-- 3. 이미지 요소 -->
+    <img src="./selak.jpg" alt="설악산">
+    <img src="./selak.jpg" alt="설악산" width="100">
+    <img src="./selak.jpg" alt="설악산" width="100%">
+    <img src="./selak.jpg" alt="설악산" height="150">
+    <img src="https://pixabay.com/ko/photos/snow-white-4810732/" alt="눈 온 냇가">
+
+    <!-- image + anchor -->
+    <p>
+        <a href=".selak.jpg"target="_blank"><img src="./selak.jpg" alt="설악산"width="50"></a>
+    </p>
+    <p>
+        <img src="./aaa.jpg" alt="대체되는 글씨">
+    </p>
+
+
+</body>
+
+</html>
